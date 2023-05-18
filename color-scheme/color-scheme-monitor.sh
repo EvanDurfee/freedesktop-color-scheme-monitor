@@ -50,7 +50,7 @@ invoke_callback_scripts() {
 }
 
 
-fifo_name="$(mktemp --dry-run -t kitty-color-scheme-listener-XXXXXX.fifo)"
+fifo_name="$(mktemp --dry-run -t color-scheme-monitor-XXXXXX.fifo)"
 mkfifo -m 0600 "$fifo_name"
 printf "Created pipe %s\n" "$fifo_name" >&2
 
