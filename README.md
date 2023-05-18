@@ -66,3 +66,5 @@ May 18 14:04:18 myhost bash[454989]: System color scheme variant updated to 0
 May 18 14:04:18 myhost bash[455106]: Invoking /home/myuser/.local/share/color-scheme/scripts/test.sh
 May 18 14:04:18 myhost bash[455108]: Variant is 0
 ```
+
+More examples can be found in the `example_scripts` dir.
