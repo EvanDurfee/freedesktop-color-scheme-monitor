@@ -16,7 +16,7 @@ kitty_config_dir="${XDG_CONFIG_HOME:-$HOME/.config}"/kitty
 mkdir -p "$kitty_config_dir"
 
 case "$variant" in
-	0) target_theme="${KITTY_LIGHT_MODE_CONFIG:-light-theme.conf}";;
+	0|2) target_theme="${KITTY_LIGHT_MODE_CONFIG:-light-theme.conf}";;
 	1) target_theme="${KITTY_DARK_MODE_CONFIG:-dark-theme.conf}";;
 	*) printf "Unrecognized color-scheme variant %s\n" "$variant" >&2; exit 1;;
 esac

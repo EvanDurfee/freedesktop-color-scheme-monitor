@@ -37,8 +37,8 @@ the monitor will invoke all scripts in `$XDG_DATA_HOME/color-scheme/scripts` (`$
 defaults to `~/.local/share`), passing the latest color scheme info as arguments to each script.
 
 Currently, the only color scheme info available is `variant`, which is a 32 bit unsigned integer (0
-represents default / light mode and 1 represents dark mode on most systems). This is passed as
-argument 1 in callback scripts, and stored in `$XDG_STATE_HOME/color-scheme/variant`.
+represents default (usually light mode), 1 represents dark mode, and 2 represents light mode. This
+is passed as argument 1 in callback scripts, and stored in `$XDG_STATE_HOME/color-scheme/variant`.
 
 ### Example script
 
